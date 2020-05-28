@@ -1,6 +1,6 @@
-package com.wealthsystemsweb.service.impl;
+package com.ws.web.service.impl;
 
-import com.wealthsystemsweb.model.Pedido;
+import com.ws.web.model.Pedido;
 
 import java.util.List;
 

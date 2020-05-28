@@ -1,4 +1,4 @@
-package com.wealthsystemsweb.dto.converter;
+package com.ws.web.dto.converter;
 
 import org.modelmapper.ModelMapper;
 

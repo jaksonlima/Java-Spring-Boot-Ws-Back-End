@@ -1,13 +1,13 @@
-package com.wealthsystemsweb;
+package com.ws.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WealthsystemswebApplication {
+public class WsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WealthsystemswebApplication.class, args);
+		SpringApplication.run(WsApplication.class, args);
 	}
 
 }

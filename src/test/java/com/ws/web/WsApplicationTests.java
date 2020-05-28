@@ -1,10 +1,10 @@
-package com.wealthsystemsweb;
+package com.ws.web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WealthsystemswebApplicationTests {
+class WsApplicationTests {
 
 	@Test
 	void contextLoads() {

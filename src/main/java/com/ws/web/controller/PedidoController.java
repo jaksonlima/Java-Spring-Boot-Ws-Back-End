@@ -1,9 +1,9 @@
-package com.wealthsystemsweb.controller;
+package com.ws.web.controller;
 
-import com.wealthsystemsweb.dto.PedidoDto;
-import com.wealthsystemsweb.dto.converter.Converter;
-import com.wealthsystemsweb.model.Pedido;
-import com.wealthsystemsweb.service.impl.IPedidoService;
+import com.ws.web.dto.PedidoDto;
+import com.ws.web.dto.converter.Converter;
+import com.ws.web.model.Pedido;
+import com.ws.web.service.impl.IPedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

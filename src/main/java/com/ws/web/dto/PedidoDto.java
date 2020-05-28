@@ -1,4 +1,4 @@
-package com.wealthsystemsweb.dto;
+package com.ws.web.dto;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.wealthsystemsweb.web.conf;
+package com.ws.web.web.conf;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.OncePerRequestFilter;

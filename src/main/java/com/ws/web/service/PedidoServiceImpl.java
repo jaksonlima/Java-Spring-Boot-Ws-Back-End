@@ -1,9 +1,8 @@
-package com.wealthsystemsweb.service;
+package com.ws.web.service;
 
-import com.wealthsystemsweb.WealthsystemswebApplication;
-import com.wealthsystemsweb.model.Pedido;
-import com.wealthsystemsweb.repository.PedidoRepository;
-import com.wealthsystemsweb.service.impl.IPedidoService;
+import com.ws.web.model.Pedido;
+import com.ws.web.repository.PedidoRepository;
+import com.ws.web.service.impl.IPedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

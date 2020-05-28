@@ -1,10 +1,11 @@
-package com.wealthsystemsweb.model;
+package com.ws.web.model;
 
 import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Entity
@@ -31,5 +32,8 @@ public class Pedido {
     @NotEmpty(message = "E-mail é obrigatório")
     @Column(name = "EMAIL")
     private String email;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "pedido")
+    private List<PedidoItem> pedidoItems;
 
 }
