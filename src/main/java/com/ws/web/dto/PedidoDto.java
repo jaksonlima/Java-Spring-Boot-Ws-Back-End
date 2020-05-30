@@ -2,10 +2,12 @@ package com.ws.web.dto;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
-public class PedidoDto {
+public class PedidoDto implements Serializable {
 
     private String razaoSocial;
 
@@ -16,4 +18,6 @@ public class PedidoDto {
     private String email;
 
     private LocalDateTime dhCriacao;
+
+    private List<PedidoItemDto> pedidoItems;
 }
