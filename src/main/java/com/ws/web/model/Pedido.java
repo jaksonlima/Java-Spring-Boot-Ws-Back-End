@@ -5,6 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -18,7 +19,7 @@ public class Pedido {
     private Integer id;
 
     @Column(name = "DH_CRIACAO")
-    private LocalDateTime dhCriacao;
+    private Date dhCriacao;
 
     @Column(name = "RAZAO_SOCIAL")
     private String razaoSocial;
@@ -34,6 +35,5 @@ public class Pedido {
     private String email;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "pedido")
-    private List<PedidoItem> pedidoItems;
-
+    private List<PedidoItem> pedidoItens;
 }

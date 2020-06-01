@@ -1,13 +1,16 @@
 package com.ws.web.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 @Data
 public class PedidoDto implements Serializable {
+
+    private Integer id;
 
     private String razaoSocial;
 
@@ -17,7 +20,8 @@ public class PedidoDto implements Serializable {
 
     private String email;
 
-    private LocalDateTime dhCriacao;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm")
+    private Date dhCriacao;
 
-    private List<PedidoItemDto> pedidoItems;
+    private List<PedidoItemDto> pedidoItens;
 }

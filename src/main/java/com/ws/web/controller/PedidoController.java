@@ -22,7 +22,7 @@ public class PedidoController {
     private IPedidoService iPedidoService;
 
     @GetMapping
-    public ResponseEntity listar(){
+    public ResponseEntity listar() {
         List<Pedido> pedidos = iPedidoService.listar();
 
         List<PedidoDto> pedidoDtos = Converter.converterList(pedidos, PedidoDto.class);
@@ -36,7 +36,9 @@ public class PedidoController {
 
         pedido = iPedidoService.criar(pedido);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(pedido);
+        pedidoDto = Converter.converterObject(pedido, PedidoDto.class);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(pedidoDto);
     }
 
     @DeleteMapping(path = "/{idPedido}")

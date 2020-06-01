@@ -3,20 +3,19 @@ package com.ws.web.dto;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 @Data
 public class PedidoItemDto implements Serializable {
 
     private Integer id;
 
-    private String nome;
+    private String produto;
 
-    private String quantidade;
+    private BigDecimal total;
 
-    private String preco;
+    private BigDecimal quantidade;
 
-    private Integer total;
-
-    private Boolean statusPedido;
+    private BigDecimal preco;
 
 }
